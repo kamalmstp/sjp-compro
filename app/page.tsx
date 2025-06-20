@@ -80,8 +80,7 @@ export default function SaranaPerintisJaya() {
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   CV. Sarana Perintis Jaya melayani kebutuhan transportasi dan logistik Anda dengan layanan Door to
-                  Door, Door to Port, Port to Door, dan Port to Port. Khusus melayani pengiriman hasil perkebunan sawit
-                  di Kalimantan Tengah.
+                  Door, Door to Port, Port to Door, dan Port to Port. Mitra Terpercaya Pengiriman Barang Perkebunan & Industri
                 </p>
               </div>
 
@@ -156,7 +155,7 @@ export default function SaranaPerintisJaya() {
 
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Kami mengkhususkan diri dalam penanganan dan pengiriman hasil perkebunan sawit dengan standar kualitas
+                  Kami melayani pengiriman kebutuhan dan hasil perkebunan sawit dengan standar kualitas
                   tinggi dan keamanan terjamin. Dengan armada yang lengkap dan tim profesional, kami siap melayani
                   berbagai kebutuhan logistik Anda.
                 </p>
@@ -254,31 +253,31 @@ export default function SaranaPerintisJaya() {
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <Leaf className="w-8 h-8" />
-                  <h3 className="text-2xl font-bold">Spesialisasi Kelapa Sawit</h3>
+                  <h3 className="text-2xl font-bold">Spesialisasi Logistik & Transportasi</h3>
                 </div>
                 <p className="text-lg opacity-90 mb-6">
-                  Kami memiliki keahlian khusus dalam menangani pengiriman hasil perkebunan sawit dengan standar
-                  kualitas tinggi dan penanganan yang tepat.
+                  Kami berpengalaman dalam menyediakan layanan pengiriman barang untuk berbagai sektor industri dan
+                  perkebunan, dengan standar kualitas tinggi dan penanganan profesional.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5" />
-                    <span>Penanganan khusus produk sawit</span>
+                    <span>Penanganan khusus untuk berbagai jenis barang</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5" />
-                    <span>Armada khusus untuk hasil perkebunan</span>
+                    <span>Armada lengkap untuk kebutuhan industri & perkebunan</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5" />
-                    <span>Pengalaman lebih dari 10 tahun</span>
+                    <span>Pengalaman lebih dari 10 tahun di bidang logistik</span>
                   </li>
                 </ul>
               </div>
               <div className="relative">
                 <Image
                   src="/placeholder.svg?height=300&width=400"
-                  alt="Perkebunan Kelapa Sawit"
+                  alt="Ilustrasi Layanan Logistik"
                   width={400}
                   height={300}
                   className="rounded-xl"
