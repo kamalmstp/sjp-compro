@@ -748,13 +748,13 @@ export default function SaranaPerintisJaya() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-blue-600 rounded-lg flex items-center justify-center">
-                  <Truck className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">CV. Sarana Perintis Jaya</h3>
-                  <p className="text-sm text-gray-400">Logistics & Transport</p>
-                </div>
+                 <Image
+                   src="logo-160.png"
+                   alt="Logo CV. SPJ"
+                   width={160}
+                   height={48}
+                   className="object-contain"
+                  />
               </div>
               <p className="text-gray-400">
                 Solusi logistik dan transport terpercaya untuk kebutuhan bisnis Anda di Kalimantan Tengah.
