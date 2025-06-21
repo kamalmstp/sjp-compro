@@ -29,16 +29,17 @@ export default function SaranaPerintisJaya() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-lg flex items-center justify-center">
-                <Truck className="w-7 h-7 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">CV. Sarana Perintis Jaya</h1>
-                <p className="text-sm text-gray-600">Logistics & Transport Solutions</p>
-              </div>
-            </div>
-
+            {/* Logo Saja */}
+            <Image
+              src="/images/logo-160.png"
+              alt="Logo CV Sarana Perintis Jaya"
+              width={160}
+              height={48}
+              className="object-contain"
+              priority
+            />
+      
+            {/* Menu Navigasi */}
             <nav className="hidden md:flex items-center space-x-8">
               <Link href="#beranda" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 Beranda
@@ -53,7 +54,8 @@ export default function SaranaPerintisJaya() {
                 Kontak
               </Link>
             </nav>
-
+      
+            {/* Tombol Aksi */}
             <Button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700">
               Hubungi Kami
               <Phone className="ml-2 w-4 h-4" />
