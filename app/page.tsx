@@ -31,7 +31,7 @@ export default function SaranaPerintisJaya() {
           <div className="flex justify-between items-center py-4">
             {/* Logo Saja */}
             <Image
-              src="/images/logo-160.png"
+              src="/logo-160.png"
               alt="Logo CV Sarana Perintis Jaya"
               width={160}
               height={48}
