@@ -1,5 +1,6 @@
 import PartnershipCallToAction from "@/components/PartnershipCallToAction";
 import LogoCarousel from "@/components/LogoCarousel";
+import MainNav from "@/components/MainNav";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -42,20 +43,7 @@ export default function SaranaPerintisJaya() {
             />
       
             {/* Menu Navigasi */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#beranda" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
-                Beranda
-              </Link>
-              <Link href="#tentang" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
-                Tentang Kami
-              </Link>
-              <Link href="#layanan" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
-                Layanan
-              </Link>
-              <Link href="#kontak" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
-                Kontak
-              </Link>
-            </nav>
+            <MainNav />
       
             {/* Tombol Aksi */}
             <Button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700">
