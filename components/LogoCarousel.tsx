@@ -13,16 +13,16 @@ import 'swiper/css/autoplay'; // Import gaya untuk autoplay
 
 // Data Dummy untuk Logo Mitra (Anda bisa tambahkan/ganti dengan data asli)
 const partnerLogos = [
-  { src: '/placeholder.svg?height=80&width=120', alt: 'PT Agro Nusantara Indonesia', name: 'PT Agro Nusantara Indonesia' },
-  { src: '/placeholder.svg?height=80&width=120', alt: 'PT Nusatrans Anugerah Makmur', name: 'PT Nusatrans Anugerah Makmur' },
+  { src: '/logo/ani.jpg?height=80&width=120', alt: 'PT Agro Nusantara Indonesia', name: 'PT Agro Nusantara Indonesia' },
+  { src: '/logo/saraswati.jpeg?height=80&width=120', alt: 'PT Nusatrans Anugerah Makmur', name: 'PT Nusatrans Anugerah Makmur' },
   { src: '/placeholder.svg?height=80&width=120', alt: 'CV Agro Sepakat Jaya', name: 'CV Agro Sepakat Jaya' },
-  { src: '/placeholder.svg?height=80&width=120', alt: 'PT Anugerah Jelajah Logistic Indonesia', name: 'PT Anugerah Jelajah Logistic Indonesia' },
+  { src: '/logo/ajil.png?height=80&width=120', alt: 'PT Anugerah Jelajah Logistic Indonesia', name: 'PT Anugerah Jelajah Logistic Indonesia' },
   { src: '/placeholder.svg?height=80&width=120', alt: 'PT Yustiko Jaya Nusantara', name: 'PT Yustiko Jaya Nusantara' },
-  { src: '/placeholder.svg?height=80&width=120', alt: 'PT Dwi Mitra Adhiusaha', name: 'PT Dwi Mitra Adhiusaha' },
+  { src: '/logo/dma.jpeg?height=80&width=120', alt: 'PT Dwi Mitra Adhiusaha', name: 'PT Dwi Mitra Adhiusaha' },
   { src: '/placeholder.svg?height=80&width=120', alt: 'PT Dehael Nusantara Logistik', name: 'PT Dehael Nusantara Logistik' },
-  { src: '/placeholder.svg?height=80&width=120', alt: 'PT Binasawit Abadipratama', name: 'PT Binasawit Abadipratama' },
+  { src: '/logo/sinarmas.png?height=80&width=120', alt: 'PT Binasawit Abadipratama', name: 'PT Binasawit Abadipratama' },
   { src: '/placeholder.svg?height=80&width=120', alt: 'PT Trans Utama Indo Sejahtera', name: 'PT Trans Utama Indo Sejahtera' },
-  { src: '/placeholder.svg?height=80&width=120', alt: 'PT Mesti Tumbuh Bersama', name: 'PT Mesti Tumbuh Bersama' },
+  { src: '/logo/mtb.jpeg?height=80&width=120', alt: 'PT Mesti Tumbuh Bersama', name: 'PT Mesti Tumbuh Bersama' },
 ];
 
 const LogoCarousel = () => {
