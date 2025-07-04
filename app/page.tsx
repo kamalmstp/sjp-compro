@@ -1,4 +1,5 @@
 import PartnershipCallToAction from "@/components/PartnershipCallToAction";
+import LogoCarousel from "@/components/LogoCarousel";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -351,73 +352,7 @@ export default function SaranaPerintisJaya() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Image
-                src="/placeholder.svg?height=80&width=120"
-                alt="PT Agro Nusantara Indonesia"
-                width={120}
-                height={80}
-                className="mx-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Agro Nusantara Indonesia</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Image
-                src="/placeholder.svg?height=80&width=120"
-                alt="PT Nusatrans Anugerah Makmur"
-                width={120}
-                height={80}
-                className="mx-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Nusatrans Anugerah Makmur</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Image
-                src="/placeholder.svg?height=80&width=120"
-                alt="CV Agro Sepakat Jaya"
-                width={120}
-                height={80}
-                className="mx-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">CV Agro Sepakat Jaya</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Image
-                src="/placeholder.svg?height=80&width=120"
-                alt="PT AJIL"
-                width={120}
-                height={80}
-                className="mx-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT AJIL</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Image
-                src="/placeholder.svg?height=80&width=120"
-                alt="PT Yustiko Jaya Nusantara"
-                width={120}
-                height={80}
-                className="mx-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Yustiko Jaya Nusantara</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Image
-                src="/placeholder.svg?height=80&width=120"
-                alt="PT Dwi Mitra Adhiusaha"
-                width={120}
-                height={80}
-                className="mx-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Dwi Mitra Adhiusaha</p>
-            </div>
-          </div>
+          <LogoCarousel />
 
           <div className="text-center mt-12">
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
