@@ -243,7 +243,7 @@ export default function SaranaPerintisJaya() {
                 </div>
                 <CardTitle className="text-xl">Port to Port</CardTitle>
                 <CardDescription className="text-center">
-                  Pengiriman antar pelabuhan dengan layanan profesional
+                  Pengiriman antar pelabuhan dan kerjasama Perusahaan Pelayaran profesional
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -615,11 +615,11 @@ export default function SaranaPerintisJaya() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Alamat Kantor</h4>
                       <p className="text-gray-600">
-                        Jl. Raya Sampit No. 123
+                        Jl. M Hatta No 70 RT/RW 016/004
                         <br />
                         Sampit, Kotawaringin Timur
                         <br />
-                        Kalimantan Tengah 74322
+                        Kalimantan Tengah
                       </p>
                     </div>
                   </div>
@@ -631,9 +631,9 @@ export default function SaranaPerintisJaya() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Telepon</h4>
                       <p className="text-gray-600">
-                        +62 536 21234
+                        +62 811 5201 797 (Sampit)
                         <br />
-                        +62 812 3456 7890
+                        +62 878 5132 3229 (Surabaya)
                       </p>
                     </div>
                   </div>
@@ -645,9 +645,9 @@ export default function SaranaPerintisJaya() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                       <p className="text-gray-600">
-                        info@saranaperintisjaya.com
+                        kurniawangungun4@gmail.com
                         <br />
-                        logistik@saranaperintisjaya.com
+                        danendracahya@gmail.com
                       </p>
                     </div>
                   </div>
@@ -663,7 +663,7 @@ export default function SaranaPerintisJaya() {
                         <br />
                         Sabtu: 08:00 - 12:00
                         <br />
-                        Emergency: 24/7
+                        Customer Serivice: 24/7
                       </p>
                     </div>
                   </div>
@@ -707,7 +707,7 @@ export default function SaranaPerintisJaya() {
                     <input
                       type="tel"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                      placeholder="+62 812 3456 7890"
+                      placeholder="+62 800 0000 0000"
                     />
                   </div>
                 </div>
@@ -792,11 +792,19 @@ export default function SaranaPerintisJaya() {
                 </p>
                 <p className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  +62 536 21234
+                  +62 811 5201 797 (Sampit)
+                </p>
+                <p className="flex items-center">
+                  <Phone className="w-4 h-4 mr-2" />
+                  +62 878 5132 3229 (Surabaya)
                 </p>
                 <p className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  info@saranaperintisjaya.com
+                  kurniawangungun4@gmail.com
+                </p>
+                <p className="flex items-center">
+                  <Mail className="w-4 h-4 mr-2" />
+                  danendracahya@gmail.com
                 </p>
               </div>
             </div>
