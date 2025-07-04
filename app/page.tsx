@@ -278,8 +278,9 @@ export default function SaranaPerintisJaya() {
               </div>
               <div className="relative">
                 <Image
-                  src="/img/truck6.jpg?height=600"
+                  src="/img/truck6.jpg?height=600&width=1000"
                   alt="Ilustrasi Layanan Logistik"
+                  width={1000}
                   height={600}
                   className="rounded-xl"
                 />
