@@ -114,7 +114,7 @@ export default function SaranaPerintisJaya() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 rounded-2xl blur-3xl opacity-20"></div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/gudang3.jpg?height=600&width=800"
                 alt="Truck Logistik CV. Sarana Perintis Jaya"
                 width={800}
                 height={600}
@@ -131,7 +131,7 @@ export default function SaranaPerintisJaya() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/img/kapal1.jpg?height=500&width=600"
                 alt="Kantor CV. Sarana Perintis Jaya"
                 width={600}
                 height={500}
@@ -278,7 +278,7 @@ export default function SaranaPerintisJaya() {
               </div>
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=300&width=400"
+                  src="/img/truck6.jpg?height=300&width=400"
                   alt="Ilustrasi Layanan Logistik"
                   width={400}
                   height={300}
