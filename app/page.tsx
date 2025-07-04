@@ -354,67 +354,67 @@ export default function SaranaPerintisJaya() {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Image
                 src="/placeholder.svg?height=80&width=120"
-                alt="PT Sawit Mas Perkebunan"
+                alt="PT Agro Nusantara Indonesia"
                 width={120}
                 height={80}
                 className="mx-auto grayscale hover:grayscale-0 transition-all"
               />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Sawit Mas</p>
+              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Agro Nusantara Indonesia</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Image
                 src="/placeholder.svg?height=80&width=120"
-                alt="CV Borneo Plantation"
+                alt="PT Nusatrans Anugerah Makmur"
                 width={120}
                 height={80}
                 className="mx-auto grayscale hover:grayscale-0 transition-all"
               />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">CV Borneo Plantation</p>
+              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Nusatrans Anugerah Makmur</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Image
                 src="/placeholder.svg?height=80&width=120"
-                alt="PT Kalteng Prima"
+                alt="CV Agro Sepakat Jaya"
                 width={120}
                 height={80}
                 className="mx-auto grayscale hover:grayscale-0 transition-all"
               />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Kalteng Prima</p>
+              <p className="text-center text-sm text-gray-600 mt-2 font-medium">CV Agro Sepakat Jaya</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Image
                 src="/placeholder.svg?height=80&width=120"
-                alt="PT Sampit Jaya"
+                alt="PT AJIL"
                 width={120}
                 height={80}
                 className="mx-auto grayscale hover:grayscale-0 transition-all"
               />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Sampit Jaya</p>
+              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT AJIL</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Image
                 src="/placeholder.svg?height=80&width=120"
-                alt="CV Mentaya Logistics"
+                alt="PT Yustiko Jaya Nusantara"
                 width={120}
                 height={80}
                 className="mx-auto grayscale hover:grayscale-0 transition-all"
               />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">CV Mentaya Logistics</p>
+              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Yustiko Jaya Nusantara</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Image
                 src="/placeholder.svg?height=80&width=120"
-                alt="PT Kotawaringin Sejahtera"
+                alt="PT Dwi Mitra Adhiusaha"
                 width={120}
                 height={80}
                 className="mx-auto grayscale hover:grayscale-0 transition-all"
               />
-              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Kotawaringin Sejahtera</p>
+              <p className="text-center text-sm text-gray-600 mt-2 font-medium">PT Dwi Mitra Adhiusaha</p>
             </div>
           </div>
 
