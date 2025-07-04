@@ -1,11 +1,11 @@
 // components/MainNav.tsx
-"use client"; // <<< INI PENTING! Tandai sebagai Client Component
+"use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const MainNav = () => {
-  const [activeSection, setActiveSection] = useState("beranda"); // State untuk melacak section aktif
+  const [activeSection, setActiveSection] = useState("beranda");
   const navItems = [
     { href: "#beranda", label: "Beranda" },
     { href: "#tentang", label: "Tentang Kami" },
@@ -14,31 +14,33 @@ const MainNav = () => {
   ];
 
   useEffect(() => {
-    // Inisialisasi Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.75) {
+          // Cukup periksa apakah elemen sedang berinterseksi (terlihat)
+          // rootMargin akan menentukan "area aktif" di tengah viewport
+          if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
       {
-        root: null, // Mengamati di dalam viewport browser
-        rootMargin: "-50% 0px -50% 0px", // Ini akan membuat active section berubah di tengah viewport
-        threshold: 0, // Mengamati segera setelah elemen masuk atau keluar
+        root: null,
+        rootMargin: "-50% 0px -50% 0px", // Tetap gunakan ini untuk mendeteksi di tengah viewport
+        threshold: 0, // Observer akan memicu saat elemen masuk/keluar dari rootMargin
       }
     );
 
-    // Amati setiap section yang memiliki ID yang sesuai dengan navItems
     navItems.forEach((item) => {
-      const section = document.getElementById(item.href.substring(1)); // Dapatkan ID dari href
+      const section = document.getElementById(item.href.substring(1));
       if (section) {
         observer.observe(section);
+      } else {
+        // Ini akan muncul di console.log jika section tidak ditemukan
+        console.warn(`Section with ID '${item.href.substring(1)}' not found.`);
       }
     });
 
-    // Bersihkan observer saat komponen di-unmount
     return () => {
       navItems.forEach((item) => {
         const section = document.getElementById(item.href.substring(1));
@@ -47,10 +49,16 @@ const MainNav = () => {
         }
       });
     };
-  }, []); // [] agar effect hanya berjalan sekali saat mount
+  }, []);
 
   return (
     <nav className="hidden md:flex items-center space-x-8">
+      {/* Tambahkan elemen ini untuk debugging visual */}
+      {/* Pastikan nav memiliki properti positioning seperti 'relative' agar absolute ini bekerja */}
+      <div className="absolute top-0 right-0 p-2 bg-red-200 text-red-800 text-xs z-50">
+        Active: {activeSection}
+      </div>
+
       {navItems.map((item) => (
         <Link
           key={item.href}
@@ -62,7 +70,6 @@ const MainNav = () => {
                : ""
             }
           `}
-          // Optional: Smooth scroll saat klik navigasi
           onClick={(e) => {
             e.preventDefault();
             const targetId = item.href.substring(1);
