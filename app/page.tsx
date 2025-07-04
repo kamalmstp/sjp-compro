@@ -41,22 +41,22 @@ export default function SaranaPerintisJaya() {
       
             {/* Menu Navigasi */}
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#beranda" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+              <Link href="#beranda" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
                 Beranda
               </Link>
-              <Link href="#tentang" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+              <Link href="#tentang" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
                 Tentang Kami
               </Link>
-              <Link href="#layanan" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+              <Link href="#layanan" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
                 Layanan
               </Link>
-              <Link href="#kontak" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+              <Link href="#kontak" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
                 Kontak
               </Link>
             </nav>
       
             {/* Tombol Aksi */}
-            <Button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700">
+            <Button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700">
               Hubungi Kami
               <Phone className="ml-2 w-4 h-4" />
             </Button>
@@ -65,15 +65,15 @@ export default function SaranaPerintisJaya() {
       </header>
 
       {/* Hero Section */}
-      <section id="beranda" className="py-20 bg-gradient-to-br from-green-50 via-blue-50 to-white">
+      <section id="beranda" className="py-20 bg-gradient-to-br from-red-50 via-orange-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <Badge className="bg-green-100 text-green-800 hover:bg-green-100">🚛 Solusi Logistik Terpercaya</Badge>
+                <Badge className="bg-red-100 text-red-800 hover:bg-red-100">🚛 Solusi Logistik Terpercaya</Badge>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Layanan
-                  <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
                     {" "}
                     Logistik
                   </span>
@@ -89,7 +89,7 @@ export default function SaranaPerintisJaya() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700"
+                  className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700"
                 >
                   Konsultasi Gratis
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -101,18 +101,18 @@ export default function SaranaPerintisJaya() {
 
               <div className="flex items-center space-x-6 text-sm text-gray-600">
                 <div className="flex items-center space-x-2">
-                  <MapPin className="w-4 h-4 text-green-600" />
+                  <MapPin className="w-4 h-4 text-red-600" />
                   <span>Sampit, Kalimantan Tengah</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Clock className="w-4 h-4 text-blue-600" />
+                  <Clock className="w-4 h-4 text-orange-600" />
                   <span>Layanan 24/7</span>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 rounded-2xl blur-3xl opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-orange-400 rounded-2xl blur-3xl opacity-20"></div>
               <Image
                 src="/img/gudang3.jpg?height=600&width=800"
                 alt="Truck Logistik CV. Sarana Perintis Jaya"
@@ -139,7 +139,7 @@ export default function SaranaPerintisJaya() {
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-green-600">10+</p>
+                  <p className="text-3xl font-bold text-red-600">10+</p>
                   <p className="text-sm text-gray-600">Tahun Pengalaman</p>
                 </div>
               </div>
@@ -165,8 +165,8 @@ export default function SaranaPerintisJaya() {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-green-600" />
+                  <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-red-600" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Keamanan Terjamin</p>
@@ -175,8 +175,8 @@ export default function SaranaPerintisJaya() {
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Users className="w-5 h-5 text-blue-600" />
+                  <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <Users className="w-5 h-5 text-orange-600" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Tim Profesional</p>
@@ -202,8 +202,8 @@ export default function SaranaPerintisJaya() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Package className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Package className="w-8 h-8 text-red-600" />
                 </div>
                 <CardTitle className="text-xl">Door to Door</CardTitle>
                 <CardDescription className="text-center">
@@ -214,8 +214,8 @@ export default function SaranaPerintisJaya() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Truck className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Truck className="w-8 h-8 text-orange-600" />
                 </div>
                 <CardTitle className="text-xl">Door to Port</CardTitle>
                 <CardDescription className="text-center">
@@ -250,7 +250,7 @@ export default function SaranaPerintisJaya() {
           </div>
 
           {/* Specialization */}
-          <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="flex items-center space-x-3 mb-4">
@@ -278,10 +278,9 @@ export default function SaranaPerintisJaya() {
               </div>
               <div className="relative">
                 <Image
-                  src="/img/truck6.jpg?height=300&width=400"
+                  src="/img/truck6.jpg?height=600"
                   alt="Ilustrasi Layanan Logistik"
-                  width={400}
-                  height={300}
+                  height={600}
                   className="rounded-xl"
                 />
               </div>
@@ -303,8 +302,8 @@ export default function SaranaPerintisJaya() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center border-0 shadow-lg">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Award className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Pengalaman Terpercaya</h3>
                 <p className="text-gray-600">
@@ -315,8 +314,8 @@ export default function SaranaPerintisJaya() {
 
             <Card className="text-center border-0 shadow-lg">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="w-8 h-8 text-orange-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Tepat Waktu</h3>
                 <p className="text-gray-600">
@@ -421,11 +420,11 @@ export default function SaranaPerintisJaya() {
           <div className="text-center mt-12">
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-red-600 mb-2">50+</div>
                 <p className="text-gray-600">Mitra Perusahaan</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">1000+</div>
                 <p className="text-gray-600">Pengiriman Berhasil</p>
               </div>
               <div className="text-center">
@@ -438,7 +437,8 @@ export default function SaranaPerintisJaya() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
+      
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Testimoni Klien</h2>
@@ -471,7 +471,7 @@ export default function SaranaPerintisJaya() {
                   <div>
                     <p className="font-semibold text-gray-900">Budi Santoso</p>
                     <p className="text-sm text-gray-600">Manager Operasional</p>
-                    <p className="text-sm text-green-600 font-medium">PT Sawit Mas Perkebunan</p>
+                    <p className="text-sm text-red-600 font-medium">PT Sawit Mas Perkebunan</p>
                   </div>
                 </div>
               </CardContent>
@@ -499,7 +499,7 @@ export default function SaranaPerintisJaya() {
                   <div>
                     <p className="font-semibold text-gray-900">Siti Rahayu</p>
                     <p className="text-sm text-gray-600">Direktur Logistik</p>
-                    <p className="text-sm text-green-600 font-medium">CV Borneo Plantation</p>
+                    <p className="text-sm text-red-600 font-medium">CV Borneo Plantation</p>
                   </div>
                 </div>
               </CardContent>
@@ -527,14 +527,13 @@ export default function SaranaPerintisJaya() {
                   <div>
                     <p className="font-semibold text-gray-900">Ahmad Fauzi</p>
                     <p className="text-sm text-gray-600">General Manager</p>
-                    <p className="text-sm text-green-600 font-medium">PT Kalteng Prima</p>
+                    <p className="text-sm text-red-600 font-medium">PT Kalteng Prima</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
 
-          {/* Additional testimonials row */}
           <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
@@ -558,7 +557,7 @@ export default function SaranaPerintisJaya() {
                   <div>
                     <p className="font-semibold text-gray-900">Indra Wijaya</p>
                     <p className="text-sm text-gray-600">Kepala Divisi Ekspor</p>
-                    <p className="text-sm text-green-600 font-medium">PT Sampit Jaya</p>
+                    <p className="text-sm text-red-600 font-medium">PT Sampit Jaya</p>
                   </div>
                 </div>
               </CardContent>
@@ -586,14 +585,15 @@ export default function SaranaPerintisJaya() {
                   <div>
                     <p className="font-semibold text-gray-900">Maria Dewi</p>
                     <p className="text-sm text-gray-600">Supply Chain Manager</p>
-                    <p className="text-sm text-green-600 font-medium">PT Kotawaringin Sejahtera</p>
+                    <p className="text-sm text-red-600 font-medium">PT Kotawaringin Sejahtera</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
+      
 
       {/* Contact Section */}
       <section id="kontak" className="py-20 bg-gray-50">
@@ -609,8 +609,8 @@ export default function SaranaPerintisJaya() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Informasi Kontak</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-green-600" />
+                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-red-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Alamat Kantor</h4>
@@ -625,8 +625,8 @@ export default function SaranaPerintisJaya() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-orange-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Telepon</h4>
@@ -679,7 +679,7 @@ export default function SaranaPerintisJaya() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                       placeholder="Masukkan nama lengkap"
                     />
                   </div>
@@ -687,7 +687,7 @@ export default function SaranaPerintisJaya() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Perusahaan</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                       placeholder="Nama perusahaan"
                     />
                   </div>
@@ -698,7 +698,7 @@ export default function SaranaPerintisJaya() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                       placeholder="email@example.com"
                     />
                   </div>
@@ -706,7 +706,7 @@ export default function SaranaPerintisJaya() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Telepon</label>
                     <input
                       type="tel"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                       placeholder="+62 800 0000 0000"
                     />
                   </div>
@@ -714,7 +714,7 @@ export default function SaranaPerintisJaya() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Layanan yang Dibutuhkan</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
                     <option>Pilih layanan</option>
                     <option>Door to Door</option>
                     <option>Door to Port</option>
@@ -727,12 +727,12 @@ export default function SaranaPerintisJaya() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     placeholder="Jelaskan kebutuhan logistik Anda..."
                   ></textarea>
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 py-3">
+                <Button className="w-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 py-3">
                   Kirim Pesan
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
