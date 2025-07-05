@@ -46,7 +46,7 @@ export default function SaranaPerintisJaya() {
             <MainNav />
       
             {/* Tombol Aksi */}
-            <Button asChild className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700">
+            <Button asChild className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 hidden md:flex">
               <Link href="https://wa.me/628115201797" target="_blank" rel="noopener noreferrer">
                 Hubungi Kami
                 <Phone className="ml-2 w-4 h-4" />
