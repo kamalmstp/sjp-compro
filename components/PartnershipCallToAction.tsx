@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const PartnershipCallToAction = () => {
   return (
@@ -26,9 +27,11 @@ const PartnershipCallToAction = () => {
           yang akan kami tawarkan kepada client dan calon client perusahaan kami. Silahkan hubungi kontak
           service kami di bawah ini, untuk info lebih lanjut.
         </p>
-        <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
-          Hubungi Kami
-          <ArrowRight className="ml-2 w-5 h-5" />
+        <Button size="lg" asChild className="bg-orange-600 hover:bg-orange-700">
+          <Link href="https://wa.me/628115201797" target="_blank" rel="noopener noreferrer">
+            Hubungi Kami
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Link>
         </Button>
       </div>
     </section>

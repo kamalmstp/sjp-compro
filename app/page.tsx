@@ -46,9 +46,11 @@ export default function SaranaPerintisJaya() {
             <MainNav />
       
             {/* Tombol Aksi */}
-            <Button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700">
-              Hubungi Kami
-              <Phone className="ml-2 w-4 h-4" />
+            <Button asChild className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700">
+              <Link href="https://wa.me/628115201797" target="_blank" rel="noopener noreferrer">
+                Hubungi Kami
+                <Phone className="ml-2 w-4 h-4" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -81,11 +83,15 @@ export default function SaranaPerintisJaya() {
                   size="lg"
                   className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700"
                 >
-                  Konsultasi Gratis
+                    <Link href="#kontak">
+                      Konsultasi Gratis
+                    </Link>
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button size="lg" variant="outline">
-                  Lihat Layanan
+                  <Link href="#layanan">
+                    Lihat Layanan
+                  </Link>
                 </Button>
               </div>
 
@@ -362,166 +368,7 @@ export default function SaranaPerintisJaya() {
       </section>
 
       <PartnershipCallToAction />
-
-      {/* Testimonials Section */}
       
-      {/* <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Testimoni Klien</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Dengarkan langsung dari klien-klien kami yang telah merasakan pelayanan terbaik
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  "CV. Sarana Perintis Jaya sangat membantu dalam pengiriman hasil panen sawit kami. Pelayanan door to
-                  port mereka sangat efisien dan tepat waktu. Tim mereka sangat profesional dalam menangani produk
-                  kami."
-                </p>
-                <div className="flex items-center">
-                  <Image
-                    src="/placeholder.svg?height=50&width=50"
-                    alt="Budi Santoso"
-                    width={50}
-                    height={50}
-                    className="rounded-full mr-4"
-                  />
-                  <div>
-                    <p className="font-semibold text-gray-900">Budi Santoso</p>
-                    <p className="text-sm text-gray-600">Manager Operasional</p>
-                    <p className="text-sm text-red-600 font-medium">PT Sawit Mas Perkebunan</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  "Sudah 5 tahun kami menggunakan jasa CV. Sarana Perintis Jaya untuk distribusi produk kami. Tidak
-                  pernah ada masalah dengan pengiriman, selalu aman dan tepat waktu. Sangat recommended!"
-                </p>
-                <div className="flex items-center">
-                  <Image
-                    src="/placeholder.svg?height=50&width=50"
-                    alt="Siti Rahayu"
-                    width={50}
-                    height={50}
-                    className="rounded-full mr-4"
-                  />
-                  <div>
-                    <p className="font-semibold text-gray-900">Siti Rahayu</p>
-                    <p className="text-sm text-gray-600">Direktur Logistik</p>
-                    <p className="text-sm text-red-600 font-medium">CV Borneo Plantation</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  "Pelayanan port to port mereka sangat memuaskan. Koordinasi dengan pelabuhan sangat baik dan tracking
-                  pengiriman selalu update. Harga juga sangat kompetitif dibanding kompetitor lain."
-                </p>
-                <div className="flex items-center">
-                  <Image
-                    src="/placeholder.svg?height=50&width=50"
-                    alt="Ahmad Fauzi"
-                    width={50}
-                    height={50}
-                    className="rounded-full mr-4"
-                  />
-                  <div>
-                    <p className="font-semibold text-gray-900">Ahmad Fauzi</p>
-                    <p className="text-sm text-gray-600">General Manager</p>
-                    <p className="text-sm text-red-600 font-medium">PT Kalteng Prima</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  "Tim customer service mereka sangat responsif. Setiap pertanyaan dan keluhan ditangani dengan cepat.
-                  Armada truck mereka juga selalu dalam kondisi prima untuk mengangkut hasil perkebunan kami."
-                </p>
-                <div className="flex items-center">
-                  <Image
-                    src="/placeholder.svg?height=50&width=50"
-                    alt="Indra Wijaya"
-                    width={50}
-                    height={50}
-                    className="rounded-full mr-4"
-                  />
-                  <div>
-                    <p className="font-semibold text-gray-900">Indra Wijaya</p>
-                    <p className="text-sm text-gray-600">Kepala Divisi Ekspor</p>
-                    <p className="text-sm text-red-600 font-medium">PT Sampit Jaya</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  "Pengalaman bekerja sama dengan CV. Sarana Perintis Jaya sangat memuaskan. Mereka memahami betul
-                  karakteristik produk sawit dan cara penanganannya. Sangat profesional dan terpercaya."
-                </p>
-                <div className="flex items-center">
-                  <Image
-                    src="/placeholder.svg?height=50&width=50"
-                    alt="Maria Dewi"
-                    width={50}
-                    height={50}
-                    className="rounded-full mr-4"
-                  />
-                  <div>
-                    <p className="font-semibold text-gray-900">Maria Dewi</p>
-                    <p className="text-sm text-gray-600">Supply Chain Manager</p>
-                    <p className="text-sm text-red-600 font-medium">PT Kotawaringin Sejahtera</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section> */}
-      
-
       {/* Contact Section */}
       <section id="kontak" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -695,18 +542,37 @@ export default function SaranaPerintisJaya() {
                 <li>Door to Port</li>
                 <li>Port to Door</li>
                 <li>Port to Port</li>
-                <li>Logistik Kelapa Sawit</li>
               </ul>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">Perusahaan</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Tentang Kami</li>
-                <li>Layanan</li>
-                <li>Karir</li>
-                <li>Berita</li>
-                <li>Kontak</li>
+                <li>
+                  <a href="#tentang" className="hover:text-white transition-colors">
+                    Tentang Kami
+                  </a>
+                </li>
+                <li>
+                  <a href="#layanan" className="hover:text-white transition-colors">
+                    Layanan
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Karir
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Berita
+                  </a>
+                </li>
+                <li>
+                  <a href="#kontak" className="hover:text-white transition-colors">
+                    Kontak
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -719,19 +585,47 @@ export default function SaranaPerintisJaya() {
                 </p>
                 <p className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  +62 811 5201 797 (Sampit)
+                  {/* Nomor WhatsApp Sampit */}
+                  <a 
+                    href="https://wa.me/628115201797" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-white transition-colors"
+                  >
+                    +62 811 5201 797 (Sampit)
+                  </a>
                 </p>
                 <p className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  +62 878 5132 3229 (Surabaya)
+                  {/* Nomor WhatsApp Surabaya */}
+                  <a 
+                    href="https://wa.me/6287851323229" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-white transition-colors"
+                  >
+                    +62 878 5132 3229 (Surabaya)
+                  </a>
                 </p>
                 <p className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  kurniawangungun4@gmail.com
+                  {/* Tautan Email 1 */}
+                  <a 
+                    href="mailto:kurniawangungun4@gmail.com" 
+                    className="hover:text-white transition-colors"
+                  >
+                    kurniawangungun4@gmail.com
+                  </a>
                 </p>
                 <p className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  danendracahya@gmail.com
+                  {/* Tautan Email 2 */}
+                  <a 
+                    href="mailto:danendracahya@gmail.com" 
+                    className="hover:text-white transition-colors"
+                  >
+                    danendracahya@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
