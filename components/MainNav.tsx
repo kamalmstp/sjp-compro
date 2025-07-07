@@ -3,9 +3,11 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const MainNav = () => {
   const [activeSection, setActiveSection] = useState("beranda");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navItems = [
     { href: "#beranda", label: "Beranda" },
     { href: "#tentang", label: "Tentang Kami" },
@@ -48,6 +50,20 @@ const MainNav = () => {
       });
     };
   }, []);
+
+  // Tutup menu mobile saat item navigasi diklik
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 80, // Sesuaikan offset jika ada fixed header
+        behavior: "smooth",
+      });
+    }
+    setIsMobileMenuOpen(false); // Tutup menu mobile setelah klik
+  };
 
   return (
     <nav className="hidden md:flex items-center space-x-8">
